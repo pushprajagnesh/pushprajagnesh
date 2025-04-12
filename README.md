@@ -1,16 +1,113 @@
-## Hi there 👋
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Pushpraj | Cinematic Creator</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-<!--
-**pushprajagnesh/pushprajagnesh** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+    body, html {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #1f1c2c, #928dab);
+      background-size: 400% 400%;
+      animation: gradientBG 12s ease infinite;
+      color: white;
+    }
 
-Here are some ideas to get you started:
+    @keyframes gradientBG {
+      0% {background-position: 0% 50%;}
+      50% {background-position: 100% 50%;}
+      100% {background-position: 0% 50%;}
+    }
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+    header {
+      padding: 20px;
+      text-align: center;
+      font-size: 2.5rem;
+      font-weight: bold;
+      letter-spacing: 6px;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      animation: glitch 2s infinite;
+      color: #fff;
+      text-shadow: 0 0 5px #ff00cc, 0 0 15px #ff00cc, 0 0 25px #ff00cc;
+      background: rgba(0,0,0,0.1);
+    }
+
+    @keyframes glitch {
+      0%, 100% {
+        text-shadow: 2px 2px #ff00cc, -2px -2px #00ffe7;
+        transform: scale(1);
+      }
+      50% {
+        text-shadow: -2px -2px #ff00cc, 2px 2px #00ffe7;
+        transform: scale(1.02);
+      }
+    }
+
+    .section {
+      padding: 50px 20px;
+      text-align: center;
+      animation: fadeIn 1.5s ease;
+    }
+
+    @keyframes fadeIn {
+      0% {opacity: 0; transform: translateY(20px);}
+      100% {opacity: 1; transform: translateY(0);}
+    }
+
+    .about p {
+      font-size: 1.2rem;
+      max-width: 700px;
+      margin: 0 auto;
+      color: #ddd;
+      line-height: 1.6;
+    }
+
+    .button {
+      background: #e1306c;
+      color: white;
+      text-decoration: none;
+      padding: 12px 35px;
+      border-radius: 50px;
+      font-size: 1rem;
+      transition: 0.3s ease;
+      display: inline-block;
+      margin-top: 20px;
+    }
+
+    .button:hover {
+      background: #c3275c;
+      transform: scale(1.05);
+    }
+
+    .domain {
+      margin-top: 40px;
+      font-size: 0.9rem;
+      color: #aaa;
+    }
+  </style>
+</head>
+<body>
+
+  <header>P U S H P R A J &nbsp; A G N E S H</header>
+
+  <div class="section about">
+    <h2>?? About Me</h2>
+    <p>
+      Hey! I'm Pushpraj — a cinematic content creator capturing emotions through visuals. <br>
+      I bring stories to life with smooth transitions, color grading, and that perfect vibe. ??<br>
+      Follow my journey on Instagram to watch the world through my lens.
+    </p>
+    <a class="button" href="https://www.instagram.com/pushp.visuals" target="_blank">?? Visit My Instagram</a>
+    <div class="domain">pushpraj.github.io</div>
+  </div>
+
+</body>
+</html>
+
